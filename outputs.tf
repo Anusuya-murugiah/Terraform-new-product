@@ -13,7 +13,3 @@ output "instance_private_ip" {
   value       = module.ec2_instance.private_ip
 }
 
-output "security_group_id" {
-  description = "Security Group attached to EC2"
-  value       = module.ec2_instance.security_group_id
-}
