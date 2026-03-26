@@ -21,5 +21,6 @@ module "ec2_instance" {
 
   tags = {
     Environment = var.environment
+    type = "test"
   }
 }
