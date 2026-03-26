@@ -3,7 +3,7 @@ data "aws_ami" "amazon_linux" {
   owners      = ["amazon"]
 
   filter {
-    name   = "name"
+    name   = "demo"
     values = ["amzn2-ami-hvm-*-x86_64-gp2"]
   }
 }
@@ -16,7 +16,7 @@ module "ec2_instance" {
   name          = var.instance_name
   instance_type = var.instance_type
   subnet_id     = var.subnet_id
-  key_name      = var.key_name
+  key_name      = "XHGDEKJADKJAIWUHFBSHJJJJJJJJJJJJJJJJJJJJJJJJJJJJJGGHGHUYWQK.pem"
   ami            = data.aws_ami.amazon_linux.id  
 
   tags = {
