@@ -16,7 +16,7 @@ module "ec2_instance" {
   name          = var.instance_name
   instance_type = var.instance_type
   subnet_id     = var.subnet_id
-  key_name      = "XHGDEKJADKJAIWUHFBSHJJJJJJJJJJJJJJJJJJJJJJJJJJJJJGGHGHUYWQK.pem"
+  key_name      = "./key.pem"
   ami            = data.aws_ami.amazon_linux.id  
 
   tags = {
